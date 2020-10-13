@@ -2,29 +2,48 @@
  * YOUR CODE HERE *
  ******************/
 function onlyOdds(nums) {
-  const result = [];
+  const odds = [];
 
   for (let i = 0; i < nums.length; i++) {
       if (nums[i] % 2 === 1){
-          result.push(nums[i]);
+          odds.push(nums[i]);
       }
   }
-  return result;
+  return odds;
 }
 
 function onlyEvens(nums) {
-  const result = [];
+  const evens = [];
 
   for (let i = 0; i < nums.length; i++) {
-      if (nums[i] % 2 === 1){
-          result.push(nums[i]);
+      if (nums[i] % 2 === 0){
+          evens.push(nums[i]);
       }
   }
-  return result;
+  return evens;
 }
 
+function shortNamesOnly(names) {
+  const shortNames = [];
+    
+  for (let i = 0; i < names.length; i++) {
+    if (names[i].length < 7){
+      shortNames.push(names[i])
+    }
+  }
+  return shortNames;
+}
 
+function sNames(names) {
+  const namesWithAnS = [];
 
+  for (let i = 0; i < names.length; i++) {
+    if (names[i][0] === 'S'){
+    namesWithAnS.push(names[i]) 
+    }
+  }
+  return namesWithAnS;
+}
 
 
 /*********************************
